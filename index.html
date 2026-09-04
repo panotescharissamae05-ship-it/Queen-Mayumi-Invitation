@@ -19,7 +19,7 @@
 /* ---------- SECTIONS ---------- */
 section{padding:58px 0}.alt{background:#fff5f6}.eyebrow{text-align:center;color:var(--gold);font-size:22px;margin-bottom:7px}.title{text-align:center;color:var(--pink);font-size:32px;font-style:italic}.orn{text-align:center;color:var(--gold);margin:7px 0 25px}.intro{text-align:center;font-size:16px;line-height:1.8}.card{background:#fff;border:1px solid #ead3ca;border-radius:22px;box-shadow:var(--shadow);padding:22px 16px;text-align:center}
 /* ---------- DETAILS ---------- */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.detail-icon{font-size:25px}.detail h3{color:var(--pink);font-size:18px;margin:5px 0}.detail p{font:13px/1.5 Arial,sans-serif}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.detail-icon{font-size:25px}.detail h3{color:var(--pink);font-size:21px;margin:5px 0}.detail p{font:15.5px/1.6 Arial,sans-serif}
 /* ---------- FAMILY ---------- */
 .people{display:grid;gap:14px}.person h3{color:var(--pink);font-size:24px;font-style:italic;margin-bottom:10px}.names{white-space:pre-line;font-size:15px;line-height:1.7}
 /* ---------- PHOTO ---------- */
@@ -33,7 +33,7 @@ section{padding:58px 0}.alt{background:#fff5f6}.eyebrow{text-align:center;color:
 /* ---------- COUNTDOWN ---------- */
 .count{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:20px}.time{background:#fff;border:1px solid #ead3ca;border-radius:13px;text-align:center;padding:11px 2px}.time strong{display:block;color:var(--pink);font:700 23px Arial}.time span{font:8px Arial;text-transform:uppercase;letter-spacing:.5px}
 /* ---------- MAP ---------- */
-.location{margin-bottom:13px}.location h3{color:var(--pink);font-size:23px;font-style:italic;margin-bottom:6px}.location p{font:13px/1.5 Arial}.btn{display:block;width:100%;margin-top:14px;padding:13px;border:0;border-radius:999px;background:var(--pink);color:white;text-align:center;font:700 12px Arial;cursor:pointer;box-shadow:0 7px 18px rgba(216,127,150,.25)}
+.location{margin-bottom:13px}.location h3{color:var(--pink);font-size:23px;font-style:italic;margin-bottom:6px}.location p{font:15px/1.6 Arial}.btn{display:block;width:100%;margin-top:14px;padding:13px;border:0;border-radius:999px;background:var(--pink);color:white;text-align:center;font:700 12px Arial;cursor:pointer;box-shadow:0 7px 18px rgba(216,127,150,.25)}
 /* ---------- VOICE ---------- */
 .voice{margin-top:25px}.voice button{font-size:13px}.voice small{display:block;text-align:center;font:10px Arial;color:#856b70;margin-top:8px}
 /* ---------- Companion ---------- */
@@ -167,28 +167,6 @@ footer{text-align:center;background:linear-gradient(rgba(171,82,104,.82),rgba(17
   color:#8d7073;
 }
 
-
-/* LITTLE PONY MAGICAL TRANSITIONS & DECOR */
-.pony-transition{position:relative;height:26px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#faf6ff;border-top:1px solid #f0e8f7;border-bottom:1px solid #f0e8f7}
-.pony-transition::before{content:"☁︎  ✦  🌈  ✦  ☁︎";position:absolute;white-space:nowrap;font-size:12px;letter-spacing:4px;opacity:.55}
-
-.pony-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;background:linear-gradient(135deg,#fff,#f8e7ff);border:1px solid #dfbbed;box-shadow:0 7px 18px rgba(126,92,160,.12);font:700 10px Arial,sans-serif;letter-spacing:1px;color:#8f5ba3}
-.pony-sparkle{animation:sparklePulse 1.8s ease-in-out infinite}
-.pony-frame{position:relative}
-
-
-.section-pony{display:flex;justify-content:center;margin:0 0 16px}
-.cover-pony{font-size:32px;letter-spacing:5px;animation:ponyMagic 2.5s ease-in-out infinite}
-
-
-.invitation-cover::after{content:"✦  ✧  ✦  ✧  ✦  ✧  ✦";position:absolute;bottom:15px;left:0;right:0;text-align:center;color:#fff;font-size:16px;letter-spacing:5px;text-shadow:0 2px 8px rgba(102,66,130,.25);animation:sparklePulse 2s ease-in-out infinite}
-
-
-
-@keyframes ponyMagic{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.08) rotate(-2deg)}}
-@keyframes sparklePulse{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
-@media(max-width:480px){.pony-transition{height:24px}.pony-transition::before{font-size:11px;letter-spacing:2px}.invitation-cover::after{font-size:12px;letter-spacing:2px}}
-
 </style>
 
 <style>
@@ -275,8 +253,8 @@ function openInvitation(){
     <p class="cover-kicker">YOU ARE INVITED TO A MAGICAL DAY</p>
     <h1>Queen Mayumi</h1>
     <p class="cover-subtitle">A Magical Christening Celebration</p>
-    <div class="cover-pony">🌈 ✦ 💕 ✦ 🌈</div>
-    <div class="cover-date">SEPTEMBER 22, 2026 • 11:30 AM</div>
+    <div class="cover-pony">🦄 💕 🦄</div>
+    <div class="cover-date">SEPTEMBER 22, 2026 • 10:00 AM</div>
     <button class="cover-open" type="button"
             onclick="event.stopPropagation();openInvitation()">
       ✨ OPEN INVITATION ✨
@@ -284,10 +262,6 @@ function openInvitation(){
     <p class="cover-tap">Tap anywhere on the card to open</p>
   </div>
 </div>
-
-<!-- LITTLE PONY MAGICAL COVER DECOR -->
-<div class="pony-sparkle" style="position:absolute;top:10%;left:6%;font-size:20px">✦</div>
-<div class="pony-sparkle" style="position:absolute;top:18%;right:8%;font-size:18px">✧</div>
 
 <!-- ============================================================
      EDITING GUIDE
@@ -298,74 +272,45 @@ function openInvitation(){
 <header class="topbar"><div class="topbar-inner wrap"><div class="brand">👑 QUEEN MAYUMI</div><nav class="nav"><a href="#home">Home</a><a href="#details">Details</a><a href="#family">Family</a><a href="#photo">Photo</a><a href="#location">Map</a></nav></div></header>
 
 <main>
-<section class="hero" id="home"><div class="hero-inner"><div class="script">A Blessed Beginning</div><h2>Join us for the Christening of</h2><h1>Queen Mayumi Torres Fernandez</h1><p>You are lovingly invited to witness<br>this beautiful and blessed day.</p><!-- EDIT DATE --><div class="date-pill"> TUESDAY • SEPTEMBER 22, 2026 • 11:30 AM</div></div></section>
+<section class="hero" id="home"><div class="hero-inner"><div class="script">A Blessed Beginning</div><h2>Join us for the Christening of</h2><h1>Queen Mayumi Torres Fernandez</h1><p>You are lovingly invited to witness<br>this beautiful and blessed day.</p><!-- EDIT DATE --><div class="date-pill">🕊️ TUESDAY • SEPTEMBER 22, 2026 • 10:00 AM</div></div></section>
 
-<div class="pony-transition" aria-hidden="true"></div>
-<section><div class="wrap"><div class="section-pony"><span class="pony-badge">🦄 LITTLE PONY MAGIC ✨</span></div><div class="eyebrow">✝</div><h2 class="title">With Joyful Hearts</h2><div class="orn">— ♡ —</div><!-- EDIT BABY MESSAGE --><p class="intro">With grateful hearts, we invite you to celebrate the christening of our precious little princess, <strong>Queen Mayumi Torres Fernandez</strong>. May this special day be filled with God's love, grace, and blessings.<br><br>Your presence, prayers, and love will make this celebration even more meaningful to our family.</p>
+<section><div class="wrap"><div class="eyebrow">✝</div><h2 class="title">With Joyful Hearts</h2><div class="orn">— ♡ —</div><!-- EDIT BABY MESSAGE --><p class="intro">With grateful hearts, we invite you to celebrate the christening of our precious little princess, <strong>Queen Mayumi Torres Fernandez</strong>. May this special day be filled with God's love, grace, and blessings.<br><br>Your presence, prayers, and love will make this celebration even more meaningful to our family.</p>
 </div></section>
 
-<div class="pony-transition" aria-hidden="true"></div>
-<section class="alt" id="details"><div class="wrap"><div class="section-pony"><span class="pony-badge">🌈 MAGICAL MOMENTS 🦄</span></div><h2 class="title">Christening Details</h2><div class="orn">✦ ❦ ✦</div><div class="grid">
+<section class="alt" id="details"><div class="wrap"><h2 class="title">Christening Details</h2><div class="orn">✦ ❦ ✦</div><div class="grid">
 <div class="card detail"><div class="detail-icon">📅</div><h3>Date</h3><!-- EDIT DATE --><p><strong>September 22, 2026</strong><br>Tuesday</p></div>
-<div class="card detail"><div class="detail-icon">⏰</div><h3>Time</h3><!-- EDIT TIME --><p><strong>11:30 AM</strong><br>Ceremony</p></div>
+<div class="card detail"><div class="detail-icon">⏰</div><h3>Time</h3><!-- EDIT TIME --><p><strong>10:00 AM</strong><br>Ceremony</p></div>
 <div class="card detail"><div class="detail-icon">⛪</div><h3>Church</h3><!-- EDIT CHURCH --><p><strong>San Fabian Pope & Martyr Parish</strong><br>San Fabian, Pangasinan</p></div>
 <div class="card detail"><div class="detail-icon">🍔</div><h3>Reception</h3><!-- EDIT RECEPTION --><p><strong>McDonald’s San Fabian</strong><br>San Fabian, Pangasinan</p></div>
 </div></div></section>
 
-<div class="pony-transition" aria-hidden="true"></div>
-<section id="family"><div class="wrap"><div class="section-pony"><span class="pony-badge">🦄 OUR MAGICAL FAMILY ✨</span></div><h2 class="title">Our Loving Family</h2><div class="orn">♡ ✝ ♡</div><div class="people">
+<section id="family"><div class="wrap"><h2 class="title">Our Loving Family</h2><div class="orn">♡ ✝ ♡</div><div class="people">
 <div class="card person"><h3>Proud Parents</h3><!-- EDIT PARENTS --><div class="names">Jomar Dela Cruz Fernandez
 &
 Marie Joy Jaravata Torres</div></div>
 </div>
 </div></div></section>
-<div class="pony-transition" aria-hidden="true"></div>
-<section class="godparents-section"><div class="section-pony"><span class="pony-badge">🦄 SPECIAL GODPARENTS ✨</span></div><h2>Our Special Godparents</h2><div class="godparents-grid"><div class="godparent-card"><div class="godparent-icon">🤵</div><h3>NINONGS</h3><ul class="godparent-list"><li>CLIFF CHRISTIAN O. FLORES</li><li>JERIC AQUINO</li><li>JOHNREY CLAPANO</li><li>MARK JOSEPH SORIANO</li><li>MELWIN CABARDO</li><li>RALPH RENZ TAMONDONG</li><li>RUSTICO NARVARTE</li></ul></div><div class="godparent-card"><div class="godparent-icon">👰</div><h3>NINANGS</h3><ul class="godparent-list"><li>ALYSSA MENDOZA</li><li>APRIL ULANDAY</li><li>MILAFAIZA T. SAGALA</li><li>RANITA REYES</li><li>SHAMYLL TORRES</li><li>TITA BALTAZAR</li><li>RACEL SERRAON</li></ul></div></div>
-<div class="dress-code-card">
-  <div class="dress-code-icon">🎀</div>
-  <h3>Ninongs &amp; Ninangs</h3>
-  <p><strong>WHITE ATTIRE</strong></p>
-  <small>Please wear elegant white attire. ♡</small>
-</div>
-<div class="dress-code-card guest-dress-card">
-  <div class="dress-code-icon">🌸</div>
-  <h3>Visitors &amp; Guests</h3>
-  <p><strong>SOFT PASTEL COLORS</strong></p>
-  <div class="pastel-swatches">
-    <span><i style="background:#F8C8C8"></i>Blush Pink</span>
-    <span><i style="background:#DCC8F5"></i>Lavender</span>
-    <span><i style="background:#C9E8F5"></i>Baby Blue</span>
-    <span><i style="background:#CDEBD8"></i>Mint Green</span>
-    <span><i style="background:#F8D7B5"></i>Peach</span>
-    <span><i style="background:#F6E7A8"></i>Butter Yellow</span>
-  </div>
-  <small>Any soft, light pastel shade is welcome. ♡</small>
-</div>
-</section>
+<section class="godparents-section"><h2>Our Special Godparents</h2><div class="godparents-grid"><div class="godparent-card"><div class="godparent-icon">🤵</div><h3>NINONGS</h3><ul class="godparent-list"><li>CLIFF CHRISTIAN  FLORES</li><li>ENGR. DAVE DELA CRUZ</li><li>JOHNREY CLAPANO</li><li>MARK JOSEPH SORIANO</li><li>MELWIN CABARDO</li><li>RALPH RENZ TAMONDONG</li><li>RUSTICO NARVARTE</li></ul></div><div class="godparent-card"><div class="godparent-icon">👰</div><h3>NINANGS</h3><ul class="godparent-list"><li>APRIL ULANDAY</li><li>ALYSSA MENDOZA</li><li>MILAFAIZA SAGALA</li><li>RANITA REYES</li><li>SHAMYLL TORRES</li><li>TITA BALTAZAR</li><li>RACEL SERRAON</li></ul></div></div></section>
 
-<div class="pony-transition" aria-hidden="true"></div>
 <section class="alt" id="photo"><div class="wrap">
-<div class="section-pony"><span class="pony-badge">🌸🦄 LITTLE PRINCESS MAGIC 🦄🌸</span></div>
-<div class="little-princess-gallery pony-frame">
+<div class="little-princess-gallery">
   <h2 class="title little-princess-title">Our Little Princess ♡</h2>
   <div class="princess-grid">
-    <img src="Queen_Mayumi_Mobile/images/IMG_2829 (2).PNG" alt="Queen Mayumi photo" loading="lazy">
-    <img src="Queen_Mayumi_Mobile/images/IMG_2830.PNG" alt="Queen Mayumi photo" loading="lazy">
-    <img src="Queen_Mayumi_Mobile/images/IMG_2827.PNG" alt="Queen Mayumi photo" loading="lazy">
-    <img src="Queen_Mayumi_Mobile/images/IMG_2826.PNG" alt="Queen Mayumi photo" loading="lazy">
+    <img src="IMG_2829 (2).PNG" alt="Queen Mayumi photo" loading="lazy">
+    <img src="IMG_2830.PNG" alt="Queen Mayumi photo" loading="lazy">
+    <img src="IMG_2827.PNG" alt="Queen Mayumi photo" loading="lazy">
+    <img src="IMG_2826.PNG" alt="Queen Mayumi photo" loading="lazy">
   </div>
 </div>
 <div style="margin-top:45px"><h2 class="title" style="font-size:27px">Countdown to the Big Day</h2><div class="count"><div class="time"><strong id="days">00</strong><span>Days</span></div><div class="time"><strong id="hours">00</strong><span>Hours</span></div><div class="time"><strong id="minutes">00</strong><span>Minutes</span></div><div class="time"><strong id="seconds">00</strong><span>Seconds</span></div></div></div></div></section>
 
-<div class="pony-transition" aria-hidden="true"></div>
-<section id="location"><div class="wrap"><div class="section-pony"><span class="pony-badge">🦄 FOLLOW THE RAINBOW 📍</span></div><h2 class="title">Location</h2><div class="orn">📍 ♡ 📍</div>
-<div class="card location"><h3>Christening Ceremony</h3><!-- EDIT MAP --><p>San Fabian Pope & Martyr Parish<br>San Fabian, Pangasinan</p><a class="btn" href="https://www.google.com/maps" target="_blank" rel="noopener">VIEW CHURCH MAP 📍</a></div>
-<div class="card location"><h3>Reception</h3><!-- EDIT MAP --><p>McDonald’s San Fabian<br>San Fabian, Pangasinan</p><a class="btn" href="https://www.google.com/maps" target="_blank" rel="noopener">VIEW RECEPTION MAP 📍</a></div></div></section>
+<section id="location"><div class="wrap"><h2 class="title">Location</h2><div class="orn">📍 ♡ 📍</div>
+<div class="card location"><h3>Christening Ceremony</h3><!-- EDIT MAP --><p>San Fabian Pope & Martyr Parish<br>San Fabian, Pangasinan</p></div>
+<div class="card location"><h3>Reception</h3><!-- EDIT MAP --><p>McDonald’s San Fabian<br>San Fabian, Pangasinan</p></div></div></section>
 
 
 </main>
 
-<div class="pony-transition" aria-hidden="true"></div>
 <section id="companion">
 <div class="container">
   <div class="companion-card">
@@ -387,6 +332,28 @@ Marie Joy Jaravata Torres</div></div>
 const christeningDate = new Date('2026-09-22T10:00:00').getTime();
 function updateCountdown(){const d=christeningDate-Date.now();if(d<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='00');return}document.getElementById('days').textContent=String(Math.floor(d/86400000)).padStart(2,'0');document.getElementById('hours').textContent=String(Math.floor(d/3600000)%24).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(d/60000)%60).padStart(2,'0');document.getElementById('seconds').textContent=String(Math.floor(d/1000)%60).padStart(2,'0')}updateCountdown();setInterval(updateCountdown,1000);
 
+/* PLAY THE LINKED YOUTUBE BACKGROUND MUSIC WHEN THE INVITATION CARD IS CLICKED */
+const cover=document.getElementById('invitation-cover');
+let youtubeMusicStarted=false;
+function playYouTubeMusic(){
+  if(youtubeMusicStarted) return;
+  youtubeMusicStarted=true;
+  const holder=document.getElementById('youtubeMusic');
+  if(!holder) return;
+  const iframe=document.createElement('iframe');
+  iframe.width='1'; iframe.height='1';
+  iframe.style.position='fixed'; iframe.style.left='-10px'; iframe.style.top='-10px';
+  iframe.style.opacity='0'; iframe.style.pointerEvents='none';
+  iframe.setAttribute('allow','autoplay; encrypted-media');
+  iframe.setAttribute('title','Background music');
+  iframe.src='https://www.youtube.com/embed/jn_ND9sYe5k?autoplay=1&controls=0&loop=1&playlist=jn_ND9sYe5k&playsinline=1&rel=0';
+  holder.appendChild(iframe);
+}
+if(cover){
+  cover.addEventListener('click',playYouTubeMusic,{once:true});
+  cover.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){playYouTubeMusic();}},{once:true});
+}
+
 /* Companion: maximum of ONE companion */
 const rsvpForm=document.getElementById('rsvpForm');
 if(rsvpForm){
@@ -404,16 +371,9 @@ if(rsvpForm){
 
 </script>
 <style>
-.godparents-section{padding:22px 14px;text-align:center}.godparents-section h2{color:#9c62ae;margin-bottom:20px}.godparents-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:900px;margin:auto}.godparent-card{background:#fff;border:1px solid #eadcf2;border-radius:18px;padding:16px 12px;box-shadow:0 10px 28px rgba(90,65,120,.12)}.godparent-icon{font-size:27px}.godparent-card h3{font-family:Arial,sans-serif;letter-spacing:2px;color:#9862a5;font-size:15px}.godparent-list{list-style:none;padding:0;margin:12px 0 0}.godparent-list li{font-family:Arial,sans-serif;font-size:13px;color:#5a4e61;padding:7px 2px;border-bottom:1px solid #eadcf0}.godparent-list li:last-child{border-bottom:0}@media(max-width:600px){.godparents-grid{grid-template-columns:1fr}}
-
-.dress-code-card{max-width:600px;margin:22px auto 0;padding:20px 18px;text-align:center;border:2px solid #e3c2ee;border-radius:22px;background:linear-gradient(145deg,#fff,#fff6ff);box-shadow:0 10px 26px rgba(90,65,120,.10)}
-.dress-code-icon{font-size:30px;margin-bottom:5px}.dress-code-card h3{color:#9862a5;font-family:Georgia,serif;font-style:italic;font-size:22px;margin:4px 0 8px}.dress-code-card p{font:700 14px Arial,sans-serif;color:#8d5f9b;margin-bottom:7px}.dress-code-card small{display:block;font:11px/1.6 Arial,sans-serif;color:#75647b;max-width:420px;margin:auto}.guest-dress-card{margin-top:14px}
-
-.pastel-swatches{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:11px auto 10px;max-width:330px}
-.pastel-swatches span{display:flex;align-items:center;gap:6px;text-align:left;padding:7px 8px;border:1px solid #eee4ef;border-radius:10px;background:#fff;font:10px Arial,sans-serif;color:#6f626f}
-.pastel-swatches i{display:block;width:16px;height:16px;flex:0 0 16px;border-radius:50%;border:1px solid rgba(80,60,80,.10)}
-.guest-dress-card{margin-top:10px}
-@media(max-width:430px){.pastel-swatches{gap:5px}.pastel-swatches span{font-size:9px;padding:6px}}
+.godparents-section{padding:28px 16px;text-align:center}.godparents-section h2{color:#9c62ae;margin-bottom:20px}.godparents-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:900px;margin:auto}.godparent-card{background:linear-gradient(145deg,#fff8ff,#f2f4ff);border:2px solid #e7c6ee;border-radius:22px;padding:20px 16px;box-shadow:0 10px 28px rgba(90,65,120,.12)}.godparent-icon{font-size:34px}.godparent-card h3{font-family:Arial,sans-serif;letter-spacing:2px;color:#9862a5;font-size:15px}.godparent-list{list-style:none;padding:0;margin:12px 0 0}.godparent-list li{font-family:Arial,sans-serif;font-size:13px;color:#5a4e61;padding:7px 2px;border-bottom:1px solid #eadcf0}.godparent-list li:last-child{border-bottom:0}@media(max-width:600px){.godparents-grid{grid-template-columns:1fr}}
 </style>
+<!-- Background music: plays the user-provided YouTube track after the invitation card is opened. -->
+<div id="youtubeMusic" aria-hidden="true"></div>
 </body>
 </html>
